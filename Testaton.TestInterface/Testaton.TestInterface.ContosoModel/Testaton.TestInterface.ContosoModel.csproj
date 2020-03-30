@@ -51,12 +51,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CreatePage.cs" />
+    <Compile Include="Common\DeletePage.cs" />
+    <Compile Include="Common\EditPage.cs" />
+    <Compile Include="Common\ITable.cs" />
+    <Compile Include="Common\IValidatedDateField.cs" />
+    <Compile Include="Common\IValidatedTextField.cs" />
+    <Compile Include="Common\Table.cs" />
+    <Compile Include="Common\ValidatedDateField.cs" />
+    <Compile Include="Common\ValidatedTextField.cs" />
+    <Compile Include="Courses\CourseCreatePage.cs" />
+    <Compile Include="Courses\CourseDeletePage.cs" />
+    <Compile Include="Courses\CourseDetailsPage.cs" />
+    <Compile Include="Courses\CourseEditPage.cs" />
+    <Compile Include="Courses\CourseRow.cs" />
+    <Compile Include="Courses\CoursesPage.cs" />
+    <Compile Include="SearchBox.cs" />
     <Compile Include="NavigationBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShellPage.cs" />
+    <Compile Include="Students\SearchBox.cs" />
+    <Compile Include="Students\StudentCreatePage.cs" />
+    <Compile Include="Students\StudentDeletePage.cs" />
+    <Compile Include="Students\StudentDetailsPage.cs" />
+    <Compile Include="Students\StudentEditPage.cs" />
+    <Compile Include="Students\StudentRow.cs" />
+    <Compile Include="Students\StudentsPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ namespace Testaton.TestInterface.ContosoTests
 {
 	public class Settings
 	{
-		private static readonly int _station = 10;
+		private static readonly int _station = 20;
 
 		private static readonly string _host = "ti.ath.cx";
 

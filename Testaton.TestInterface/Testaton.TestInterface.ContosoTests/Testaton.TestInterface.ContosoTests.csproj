@@ -42,9 +42,6 @@
     <Reference Include="Bumblebee, Version=2.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bumblebee.Automation.2.1.2\lib\netstandard2.0\Bumblebee.dll</HintPath>
     </Reference>
-    <Reference Include="Contoso.Model">
-      <HintPath>..\packages\Contoso.Model\Contoso.Model.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -62,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoursesPageTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="StudentsPage.cs" />
@@ -74,7 +72,12 @@
     <None Include="TestDesigns\addStudentWithPastDate.md" />
     <None Include="TestDesigns\editStudent.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Testaton.TestInterface.ContosoModel\Testaton.TestInterface.ContosoModel.csproj">
+      <Project>{D342E572-4BF3-48BF-AB51-FC18BBE097AF}</Project>
+      <Name>Testaton.TestInterface.ContosoModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
